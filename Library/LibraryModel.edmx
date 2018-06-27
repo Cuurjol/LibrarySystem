@@ -1,0 +1,952 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="LibraryModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="LibraryModelStoreContainer">
+    <EntitySet Name="Books" EntityType="LibraryModel.Store.Books" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Catalogs" EntityType="LibraryModel.Store.Catalogs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Orders" EntityType="LibraryModel.Store.Orders" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Readers" EntityType="LibraryModel.Store.Readers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="LibraryModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Genres" EntityType="LibraryModel.Store.Genres" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BlackLists" EntityType="LibraryModel.Store.BlackLists" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Entities" EntityType="LibraryModel.Store.Entities" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EntityRecords" EntityType="LibraryModel.Store.EntityRecords" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EntityHistories" EntityType="LibraryModel.Store.EntityHistories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BooksOrders" EntityType="LibraryModel.Store.BooksOrders" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ReaderOrder" Association="LibraryModel.Store.ReaderOrder">
+      <End Role="Reader" EntitySet="Readers" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="CatalogBook" Association="LibraryModel.Store.CatalogBook">
+      <End Role="Catalog" EntitySet="Catalogs" />
+      <End Role="Book" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BooksOrders_Book" Association="LibraryModel.Store.FK_BooksOrders_Book">
+      <End Role="Book" EntitySet="Books" />
+      <End Role="BooksOrders" EntitySet="BooksOrders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BooksOrders_Order" Association="LibraryModel.Store.FK_BooksOrders_Order">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="BooksOrders" EntitySet="BooksOrders" />
+    </AssociationSet>
+    <AssociationSet Name="GenreBook" Association="LibraryModel.Store.GenreBook">
+      <End Role="Genre" EntitySet="Genres" />
+      <End Role="Book" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="EntityEntityRecord" Association="LibraryModel.Store.EntityEntityRecord">
+      <End Role="Entity" EntitySet="Entities" />
+      <End Role="EntityRecord" EntitySet="EntityRecords" />
+    </AssociationSet>
+    <AssociationSet Name="EntityRecordEntityHistory" Association="LibraryModel.Store.EntityRecordEntityHistory">
+      <End Role="EntityRecord" EntitySet="EntityRecords" />
+      <End Role="EntityHistory" EntitySet="EntityHistories" />
+    </AssociationSet>
+    <AssociationSet Name="UserEntityHistory" Association="LibraryModel.Store.UserEntityHistory">
+      <End Role="User" EntitySet="Users" />
+      <End Role="EntityHistory" EntitySet="EntityHistories" />
+    </AssociationSet>
+    <AssociationSet Name="UserEntityRecord" Association="LibraryModel.Store.UserEntityRecord">
+      <End Role="User" EntitySet="Users" />
+      <End Role="EntityRecord" EntitySet="EntityRecords" />
+    </AssociationSet>
+    <AssociationSet Name="UserEntityRecord1" Association="LibraryModel.Store.UserEntityRecord1">
+      <End Role="User" EntitySet="Users" />
+      <End Role="EntityRecord" EntitySet="EntityRecords" />
+    </AssociationSet>
+    <AssociationSet Name="GenreEntityRecord" Association="LibraryModel.Store.GenreEntityRecord">
+      <End Role="Genre" EntitySet="Genres" />
+      <End Role="EntityRecord" EntitySet="EntityRecords" />
+    </AssociationSet>
+    <AssociationSet Name="CatalogEntityRecord" Association="LibraryModel.Store.CatalogEntityRecord">
+      <End Role="Catalog" EntitySet="Catalogs" />
+      <End Role="EntityRecord" EntitySet="EntityRecords" />
+    </AssociationSet>
+    <AssociationSet Name="BookEntityRecord" Association="LibraryModel.Store.BookEntityRecord">
+      <End Role="Book" EntitySet="Books" />
+      <End Role="EntityRecord" EntitySet="EntityRecords" />
+    </AssociationSet>
+    <AssociationSet Name="OrderEntityRecord" Association="LibraryModel.Store.OrderEntityRecord">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="EntityRecord" EntitySet="EntityRecords" />
+    </AssociationSet>
+    <AssociationSet Name="ReaderEntityRecord" Association="LibraryModel.Store.ReaderEntityRecord">
+      <End Role="Reader" EntitySet="Readers" />
+      <End Role="EntityRecord" EntitySet="EntityRecords" />
+    </AssociationSet>
+    <AssociationSet Name="BlackListEntityRecord" Association="LibraryModel.Store.BlackListEntityRecord">
+      <End Role="BlackList" EntitySet="BlackLists" />
+      <End Role="EntityRecord" EntitySet="EntityRecords" />
+    </AssociationSet>
+    <AssociationSet Name="ReaderBlackList" Association="LibraryModel.Store.ReaderBlackList">
+      <End Role="Reader" EntitySet="Readers" />
+      <End Role="BlackList" EntitySet="BlackLists" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Books">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Author" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Year" Type="smallint" Nullable="false" />
+    <Property Name="Catalog_Id" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="Genre_Id" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Catalogs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Number" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RegisteredOn" Type="datetime" Nullable="false" />
+    <Property Name="DeadlineDate" Type="datetime" Nullable="false" />
+    <Property Name="ClosureDate" Type="datetime" Nullable="true" />
+    <Property Name="Reader_Id" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Readers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Status" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Blocked" Type="bit" Nullable="false" />
+    <Property Name="Removed" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserRole" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="Login" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="TimeInSystem" Type="datetime" Nullable="true" />
+    <Property Name="TimeOutSystem" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Genres">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="BlackLists">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Reader_Id" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Entities">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EntityRecords">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="State" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Entity_Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CreatedBy_Id" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="ModifiedBy_Id" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="Genre_Id" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="Catalog_Id" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="Book_Id" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="Order_Id" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="Reader_Id" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="BlackList_Id" Type="uniqueidentifier" Nullable="true" />
+  </EntityType>
+  <EntityType Name="EntityHistories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FieldName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="OldValue" Type="nvarchar" Nullable="true" MaxLength="150" />
+    <Property Name="NewValue" Type="nvarchar" Nullable="true" MaxLength="150" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="EntityRecord_Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="User_Id" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BooksOrders">
+    <Key>
+      <PropertyRef Name="Books_Id" />
+      <PropertyRef Name="Orders_Id" />
+    </Key>
+    <Property Name="Books_Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Orders_Id" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <Association Name="ReaderOrder">
+    <End Role="Reader" Type="LibraryModel.Store.Readers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Order" Type="LibraryModel.Store.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reader">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="Reader_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CatalogBook">
+    <End Role="Catalog" Type="LibraryModel.Store.Catalogs" Multiplicity="0..1" />
+    <End Role="Book" Type="LibraryModel.Store.Books" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catalog">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="Catalog_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="GenreBook">
+    <End Role="Genre" Type="LibraryModel.Store.Genres" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Book" Type="LibraryModel.Store.Books" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genre">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="Genre_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EntityEntityRecord">
+    <End Role="Entity" Type="LibraryModel.Store.Entities" Multiplicity="1" />
+    <End Role="EntityRecord" Type="LibraryModel.Store.EntityRecords" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Entity">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EntityRecord">
+        <PropertyRef Name="Entity_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EntityRecordEntityHistory">
+    <End Role="EntityRecord" Type="LibraryModel.Store.EntityRecords" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EntityHistory" Type="LibraryModel.Store.EntityHistories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EntityRecord">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EntityHistory">
+        <PropertyRef Name="EntityRecord_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserEntityHistory">
+    <End Role="User" Type="LibraryModel.Store.Users" Multiplicity="1" />
+    <End Role="EntityHistory" Type="LibraryModel.Store.EntityHistories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EntityHistory">
+        <PropertyRef Name="User_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserEntityRecord">
+    <End Role="User" Type="LibraryModel.Store.Users" Multiplicity="0..1" />
+    <End Role="EntityRecord" Type="LibraryModel.Store.EntityRecords" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EntityRecord">
+        <PropertyRef Name="CreatedBy_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserEntityRecord1">
+    <End Role="User" Type="LibraryModel.Store.Users" Multiplicity="0..1" />
+    <End Role="EntityRecord" Type="LibraryModel.Store.EntityRecords" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EntityRecord">
+        <PropertyRef Name="ModifiedBy_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="GenreEntityRecord">
+    <End Role="Genre" Type="LibraryModel.Store.Genres" Multiplicity="0..1" />
+    <End Role="EntityRecord" Type="LibraryModel.Store.EntityRecords" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genre">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EntityRecord">
+        <PropertyRef Name="Genre_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CatalogEntityRecord">
+    <End Role="Catalog" Type="LibraryModel.Store.Catalogs" Multiplicity="0..1" />
+    <End Role="EntityRecord" Type="LibraryModel.Store.EntityRecords" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catalog">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EntityRecord">
+        <PropertyRef Name="Catalog_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="BookEntityRecord">
+    <End Role="Book" Type="LibraryModel.Store.Books" Multiplicity="0..1" />
+    <End Role="EntityRecord" Type="LibraryModel.Store.EntityRecords" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EntityRecord">
+        <PropertyRef Name="Book_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderEntityRecord">
+    <End Role="Order" Type="LibraryModel.Store.Orders" Multiplicity="0..1" />
+    <End Role="EntityRecord" Type="LibraryModel.Store.EntityRecords" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EntityRecord">
+        <PropertyRef Name="Order_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ReaderEntityRecord">
+    <End Role="Reader" Type="LibraryModel.Store.Readers" Multiplicity="0..1" />
+    <End Role="EntityRecord" Type="LibraryModel.Store.EntityRecords" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reader">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EntityRecord">
+        <PropertyRef Name="Reader_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="BlackListEntityRecord">
+    <End Role="BlackList" Type="LibraryModel.Store.BlackLists" Multiplicity="0..1" />
+    <End Role="EntityRecord" Type="LibraryModel.Store.EntityRecords" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BlackList">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EntityRecord">
+        <PropertyRef Name="BlackList_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ReaderBlackList">
+    <End Role="Reader" Type="LibraryModel.Store.Readers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BlackList" Type="LibraryModel.Store.BlackLists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reader">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BlackList">
+        <PropertyRef Name="Reader_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BooksOrders_Book">
+    <End Role="Book" Type="LibraryModel.Store.Books" Multiplicity="1" />
+    <End Role="BooksOrders" Type="LibraryModel.Store.BooksOrders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BooksOrders">
+        <PropertyRef Name="Books_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BooksOrders_Order">
+    <End Role="BooksOrders" Type="LibraryModel.Store.BooksOrders" Multiplicity="*" />
+    <End Role="Order" Type="LibraryModel.Store.Orders" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BooksOrders">
+        <PropertyRef Name="Orders_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="LibraryModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="LibraryModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Books" EntityType="LibraryModel.Book" />
+          <EntitySet Name="Catalogs" EntityType="LibraryModel.Catalog" />
+          <EntitySet Name="Orders" EntityType="LibraryModel.Order" />
+          <EntitySet Name="Readers" EntityType="LibraryModel.Reader" />
+          <EntitySet Name="Users" EntityType="LibraryModel.User" />
+          <AssociationSet Name="ReaderOrder" Association="LibraryModel.ReaderOrder">
+            <End Role="Reader" EntitySet="Readers" />
+            <End Role="Order" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="CatalogBook" Association="LibraryModel.CatalogBook">
+            <End Role="Catalog" EntitySet="Catalogs" />
+            <End Role="Book" EntitySet="Books" />
+          </AssociationSet>
+          <AssociationSet Name="BooksOrders" Association="LibraryModel.BooksOrders">
+            <End Role="Book" EntitySet="Books" />
+            <End Role="Order" EntitySet="Orders" />
+          </AssociationSet>
+          <EntitySet Name="Genres" EntityType="LibraryModel.Genre" />
+          <AssociationSet Name="GenreBook" Association="LibraryModel.GenreBook">
+            <End Role="Genre" EntitySet="Genres" />
+            <End Role="Book" EntitySet="Books" />
+          </AssociationSet>
+          <EntitySet Name="BlackLists" EntityType="LibraryModel.BlackList" />
+          <EntitySet Name="Entities" EntityType="LibraryModel.Entity" />
+          <EntitySet Name="EntityRecords" EntityType="LibraryModel.EntityRecord" />
+          <EntitySet Name="EntityHistories" EntityType="LibraryModel.EntityHistory" />
+          <AssociationSet Name="EntityEntityRecord" Association="LibraryModel.EntityEntityRecord">
+            <End Role="Entity" EntitySet="Entities" />
+            <End Role="EntityRecord" EntitySet="EntityRecords" />
+          </AssociationSet>
+          <AssociationSet Name="EntityRecordEntityHistory" Association="LibraryModel.EntityRecordEntityHistory">
+            <End Role="EntityRecord" EntitySet="EntityRecords" />
+            <End Role="EntityHistory" EntitySet="EntityHistories" />
+          </AssociationSet>
+          <AssociationSet Name="UserEntityHistory" Association="LibraryModel.UserEntityHistory">
+            <End Role="User" EntitySet="Users" />
+            <End Role="EntityHistory" EntitySet="EntityHistories" />
+          </AssociationSet>
+          <AssociationSet Name="UserEntityRecord" Association="LibraryModel.UserEntityRecord">
+            <End Role="User" EntitySet="Users" />
+            <End Role="EntityRecord" EntitySet="EntityRecords" />
+          </AssociationSet>
+          <AssociationSet Name="UserEntityRecord1" Association="LibraryModel.UserEntityRecord1">
+            <End Role="User" EntitySet="Users" />
+            <End Role="EntityRecord" EntitySet="EntityRecords" />
+          </AssociationSet>
+          <AssociationSet Name="GenreEntityRecord" Association="LibraryModel.GenreEntityRecord">
+            <End Role="Genre" EntitySet="Genres" />
+            <End Role="EntityRecord" EntitySet="EntityRecords" />
+          </AssociationSet>
+          <AssociationSet Name="CatalogEntityRecord" Association="LibraryModel.CatalogEntityRecord">
+            <End Role="Catalog" EntitySet="Catalogs" />
+            <End Role="EntityRecord" EntitySet="EntityRecords" />
+          </AssociationSet>
+          <AssociationSet Name="BookEntityRecord" Association="LibraryModel.BookEntityRecord">
+            <End Role="Book" EntitySet="Books" />
+            <End Role="EntityRecord" EntitySet="EntityRecords" />
+          </AssociationSet>
+          <AssociationSet Name="OrderEntityRecord" Association="LibraryModel.OrderEntityRecord">
+            <End Role="Order" EntitySet="Orders" />
+            <End Role="EntityRecord" EntitySet="EntityRecords" />
+          </AssociationSet>
+          <AssociationSet Name="ReaderEntityRecord" Association="LibraryModel.ReaderEntityRecord">
+            <End Role="Reader" EntitySet="Readers" />
+            <End Role="EntityRecord" EntitySet="EntityRecords" />
+          </AssociationSet>
+          <AssociationSet Name="BlackListEntityRecord" Association="LibraryModel.BlackListEntityRecord">
+            <End Role="BlackList" EntitySet="BlackLists" />
+            <End Role="EntityRecord" EntitySet="EntityRecords" />
+          </AssociationSet>
+          <AssociationSet Name="ReaderBlackList" Association="LibraryModel.ReaderBlackList">
+            <End Role="Reader" EntitySet="Readers" />
+            <End Role="BlackList" EntitySet="BlackLists" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Book">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" />
+          <Property Name="Author" Type="String" Nullable="false" MaxLength="50" Unicode="true" />
+          <Property Name="Year" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="Catalog" Relationship="LibraryModel.CatalogBook" FromRole="Book" ToRole="Catalog" />
+          <NavigationProperty Name="Orders" Relationship="LibraryModel.BooksOrders" FromRole="Book" ToRole="Order" />
+          <NavigationProperty Name="Genre" Relationship="LibraryModel.GenreBook" FromRole="Book" ToRole="Genre" />
+          <NavigationProperty Name="BookRecord" Relationship="LibraryModel.BookEntityRecord" FromRole="Book" ToRole="EntityRecord" />
+        </EntityType>
+        <EntityType Name="Catalog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" />
+          <NavigationProperty Name="Books" Relationship="LibraryModel.CatalogBook" FromRole="Catalog" ToRole="Book" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="150" Unicode="true" />
+          <NavigationProperty Name="CatalogRecord" Relationship="LibraryModel.CatalogEntityRecord" FromRole="Catalog" ToRole="EntityRecord" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Number" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RegisteredOn" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="DeadlineDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="ClosureDate" Type="DateTime" Nullable="true" Precision="0" />
+          <NavigationProperty Name="Reader" Relationship="LibraryModel.ReaderOrder" FromRole="Order" ToRole="Reader" />
+          <NavigationProperty Name="Books" Relationship="LibraryModel.BooksOrders" FromRole="Order" ToRole="Book" />
+          <NavigationProperty Name="OrderRecord" Relationship="LibraryModel.OrderEntityRecord" FromRole="Order" ToRole="EntityRecord" />
+        </EntityType>
+        <EntityType Name="Reader">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="20" Unicode="true" />
+          <Property Name="Blocked" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Orders" Relationship="LibraryModel.ReaderOrder" FromRole="Reader" ToRole="Order" />
+          <Property Name="Removed" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ReaderRecord" Relationship="LibraryModel.ReaderEntityRecord" FromRole="Reader" ToRole="EntityRecord" />
+          <NavigationProperty Name="BlackList" Relationship="LibraryModel.ReaderBlackList" FromRole="Reader" ToRole="BlackList" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" />
+          <Property Name="UserRole" Type="String" Nullable="false" MaxLength="30" Unicode="true" />
+          <Property Name="Login" Type="String" Nullable="false" Unicode="true" MaxLength="30" />
+          <Property Name="Password" Type="String" Nullable="false" Unicode="true" MaxLength="30" />
+          <NavigationProperty Name="EntityHistories" Relationship="LibraryModel.UserEntityHistory" FromRole="User" ToRole="EntityHistory" />
+          <NavigationProperty Name="CreatedByRecords" Relationship="LibraryModel.UserEntityRecord" FromRole="User" ToRole="EntityRecord" />
+          <NavigationProperty Name="ModifiedByRecords" Relationship="LibraryModel.UserEntityRecord1" FromRole="User" ToRole="EntityRecord" />
+          <Property Name="TimeInSystem" Type="DateTime" Nullable="true" />
+          <Property Name="TimeOutSystem" Type="DateTime" Nullable="true" />
+        </EntityType>
+        <Association Name="ReaderOrder">
+          <End Type="LibraryModel.Reader" Role="Reader" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="LibraryModel.Order" Role="Order" Multiplicity="*" />
+        </Association>
+        <Association Name="CatalogBook">
+          <End Type="LibraryModel.Catalog" Role="Catalog" Multiplicity="0..1" />
+          <End Type="LibraryModel.Book" Role="Book" Multiplicity="*" />
+        </Association>
+        <Association Name="BooksOrders">
+          <End Type="LibraryModel.Book" Role="Book" Multiplicity="*" >
+          </End>
+          <End Type="LibraryModel.Order" Role="Order" Multiplicity="*" />
+        </Association>
+        <EntityType Name="Genre">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" />
+          <NavigationProperty Name="Books" Relationship="LibraryModel.GenreBook" FromRole="Genre" ToRole="Book" />
+          <NavigationProperty Name="GenreRecord" Relationship="LibraryModel.GenreEntityRecord" FromRole="Genre" ToRole="EntityRecord" />
+        </EntityType>
+        <Association Name="GenreBook">
+          <End Type="LibraryModel.Genre" Role="Genre" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="LibraryModel.Book" Role="Book" Multiplicity="*" />
+        </Association>
+        <EntityType Name="BlackList">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" />
+          <NavigationProperty Name="BlackListRecord" Relationship="LibraryModel.BlackListEntityRecord" FromRole="BlackList" ToRole="EntityRecord" />
+          <NavigationProperty Name="Reader" Relationship="LibraryModel.ReaderBlackList" FromRole="BlackList" ToRole="Reader" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="Entity">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" />
+          <NavigationProperty Name="EntityRecords" Relationship="LibraryModel.EntityEntityRecord" FromRole="Entity" ToRole="EntityRecord" />
+        </EntityType>
+        <EntityType Name="EntityRecord">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <NavigationProperty Name="Entity" Relationship="LibraryModel.EntityEntityRecord" FromRole="EntityRecord" ToRole="Entity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" />
+          <Property Name="State" Type="String" Nullable="false" MaxLength="20" />
+          <NavigationProperty Name="EntityHistories" Relationship="LibraryModel.EntityRecordEntityHistory" FromRole="EntityRecord" ToRole="EntityHistory" />
+          <NavigationProperty Name="CreatedBy" Relationship="LibraryModel.UserEntityRecord" FromRole="EntityRecord" ToRole="User" />
+          <NavigationProperty Name="ModifiedBy" Relationship="LibraryModel.UserEntityRecord1" FromRole="EntityRecord" ToRole="User" />
+          <NavigationProperty Name="Genre" Relationship="LibraryModel.GenreEntityRecord" FromRole="EntityRecord" ToRole="Genre" />
+          <NavigationProperty Name="Catalog" Relationship="LibraryModel.CatalogEntityRecord" FromRole="EntityRecord" ToRole="Catalog" />
+          <NavigationProperty Name="Book" Relationship="LibraryModel.BookEntityRecord" FromRole="EntityRecord" ToRole="Book" />
+          <NavigationProperty Name="Order" Relationship="LibraryModel.OrderEntityRecord" FromRole="EntityRecord" ToRole="Order" />
+          <NavigationProperty Name="Reader" Relationship="LibraryModel.ReaderEntityRecord" FromRole="EntityRecord" ToRole="Reader" />
+          <NavigationProperty Name="BlackList" Relationship="LibraryModel.BlackListEntityRecord" FromRole="EntityRecord" ToRole="BlackList" />
+        </EntityType>
+        <EntityType Name="EntityHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="FieldName" Type="String" Nullable="false" MaxLength="50" Unicode="true" />
+          <Property Name="OldValue" Type="String" Nullable="true" MaxLength="150" Unicode="true" />
+          <Property Name="NewValue" Type="String" Nullable="true" MaxLength="150" Unicode="true" />
+          <Property Name="Date" Nullable="false" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="EntityRecord" Relationship="LibraryModel.EntityRecordEntityHistory" FromRole="EntityHistory" ToRole="EntityRecord" />
+          <NavigationProperty Name="User" Relationship="LibraryModel.UserEntityHistory" FromRole="EntityHistory" ToRole="User" />
+        </EntityType>
+        <Association Name="EntityEntityRecord">
+          <End Type="LibraryModel.Entity" Role="Entity" Multiplicity="1" />
+          <End Type="LibraryModel.EntityRecord" Role="EntityRecord" Multiplicity="*" />
+        </Association>
+        <Association Name="EntityRecordEntityHistory">
+          <End Type="LibraryModel.EntityRecord" Role="EntityRecord" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="LibraryModel.EntityHistory" Role="EntityHistory" Multiplicity="*" />
+        </Association>
+        <Association Name="UserEntityHistory">
+          <End Type="LibraryModel.User" Role="User" Multiplicity="1" />
+          <End Type="LibraryModel.EntityHistory" Role="EntityHistory" Multiplicity="*" />
+        </Association>
+        <Association Name="UserEntityRecord">
+          <End Type="LibraryModel.User" Role="User" Multiplicity="0..1" />
+          <End Type="LibraryModel.EntityRecord" Role="EntityRecord" Multiplicity="*" />
+        </Association>
+        <Association Name="UserEntityRecord1">
+          <End Type="LibraryModel.User" Role="User" Multiplicity="0..1" />
+          <End Type="LibraryModel.EntityRecord" Role="EntityRecord" Multiplicity="*" />
+        </Association>
+        <Association Name="GenreEntityRecord">
+          <End Type="LibraryModel.Genre" Role="Genre" Multiplicity="0..1" />
+          <End Type="LibraryModel.EntityRecord" Role="EntityRecord" Multiplicity="0..1" />
+        </Association>
+        <Association Name="CatalogEntityRecord">
+          <End Type="LibraryModel.Catalog" Role="Catalog" Multiplicity="0..1" />
+          <End Type="LibraryModel.EntityRecord" Role="EntityRecord" Multiplicity="0..1" />
+        </Association>
+        <Association Name="BookEntityRecord">
+          <End Type="LibraryModel.Book" Role="Book" Multiplicity="0..1" />
+          <End Type="LibraryModel.EntityRecord" Role="EntityRecord" Multiplicity="0..1" />
+        </Association>
+        <Association Name="OrderEntityRecord">
+          <End Type="LibraryModel.Order" Role="Order" Multiplicity="0..1" />
+          <End Type="LibraryModel.EntityRecord" Role="EntityRecord" Multiplicity="0..1" />
+        </Association>
+        <Association Name="ReaderEntityRecord">
+          <End Type="LibraryModel.Reader" Role="Reader" Multiplicity="0..1" />
+          <End Type="LibraryModel.EntityRecord" Role="EntityRecord" Multiplicity="0..1" />
+        </Association>
+        <Association Name="BlackListEntityRecord">
+          <End Type="LibraryModel.BlackList" Role="BlackList" Multiplicity="0..1" />
+          <End Type="LibraryModel.EntityRecord" Role="EntityRecord" Multiplicity="0..1" />
+        </Association>
+        <Association Name="ReaderBlackList">
+          <End Type="LibraryModel.Reader" Role="Reader" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="LibraryModel.BlackList" Role="BlackList" Multiplicity="0..1" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LibraryModelStoreContainer" CdmEntityContainer="LibraryModelContainer">
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.Book)">
+        <MappingFragment StoreEntitySet="Books">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Catalogs">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.Catalog)">
+        <MappingFragment StoreEntitySet="Catalogs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.Order)">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="RegisteredOn" ColumnName="RegisteredOn" />
+          <ScalarProperty Name="DeadlineDate" ColumnName="DeadlineDate" />
+          <ScalarProperty Name="ClosureDate" ColumnName="ClosureDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Readers">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.Reader)">
+        <MappingFragment StoreEntitySet="Readers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Blocked" ColumnName="Blocked" />
+          <ScalarProperty Name="Removed" ColumnName="Removed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.User)">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="TimeInSystem" ColumnName="TimeInSystem" />
+          <ScalarProperty Name="TimeOutSystem" ColumnName="TimeOutSystem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genres">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.Genre)">
+        <MappingFragment StoreEntitySet="Genres">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BlackLists">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.BlackList)">
+        <MappingFragment StoreEntitySet="BlackLists">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Entities">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.Entity)">
+        <MappingFragment StoreEntitySet="Entities">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntityRecords">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.EntityRecord)">
+        <MappingFragment StoreEntitySet="EntityRecords">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="State" ColumnName="State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntityHistories">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.EntityHistory)">
+        <MappingFragment StoreEntitySet="EntityHistories">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="OldValue" ColumnName="OldValue" />
+          <ScalarProperty Name="NewValue" ColumnName="NewValue" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ReaderOrder" TypeName="LibraryModel.ReaderOrder" StoreEntitySet="Orders">
+      <EndProperty Name="Reader">
+        <ScalarProperty Name="Id" ColumnName="Reader_Id" />
+      </EndProperty>
+      <EndProperty Name="Order">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="CatalogBook" TypeName="LibraryModel.CatalogBook" StoreEntitySet="Books">
+      <EndProperty Name="Catalog">
+        <ScalarProperty Name="Id" ColumnName="Catalog_Id" />
+      </EndProperty>
+      <EndProperty Name="Book">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="Catalog_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="BooksOrders" TypeName="LibraryModel.BooksOrders" StoreEntitySet="BooksOrders">
+      <EndProperty Name="Book">
+        <ScalarProperty Name="Id" ColumnName="Books_Id" />
+      </EndProperty>
+      <EndProperty Name="Order">
+        <ScalarProperty Name="Id" ColumnName="Orders_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="GenreBook" TypeName="LibraryModel.GenreBook" StoreEntitySet="Books">
+      <EndProperty Name="Genre">
+        <ScalarProperty Name="Id" ColumnName="Genre_Id" />
+      </EndProperty>
+      <EndProperty Name="Book">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="EntityEntityRecord" TypeName="LibraryModel.EntityEntityRecord" StoreEntitySet="EntityRecords">
+      <EndProperty Name="Entity">
+        <ScalarProperty Name="Id" ColumnName="Entity_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="EntityRecordEntityHistory" TypeName="LibraryModel.EntityRecordEntityHistory" StoreEntitySet="EntityHistories">
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="EntityRecord_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityHistory">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserEntityHistory" TypeName="LibraryModel.UserEntityHistory" StoreEntitySet="EntityHistories">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="User_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityHistory">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserEntityRecord" TypeName="LibraryModel.UserEntityRecord" StoreEntitySet="EntityRecords">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="CreatedBy_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="CreatedBy_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserEntityRecord1" TypeName="LibraryModel.UserEntityRecord1" StoreEntitySet="EntityRecords">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="ModifiedBy_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="ModifiedBy_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="GenreEntityRecord" TypeName="LibraryModel.GenreEntityRecord" StoreEntitySet="EntityRecords">
+      <EndProperty Name="Genre">
+        <ScalarProperty Name="Id" ColumnName="Genre_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="Genre_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="CatalogEntityRecord" TypeName="LibraryModel.CatalogEntityRecord" StoreEntitySet="EntityRecords">
+      <EndProperty Name="Catalog">
+        <ScalarProperty Name="Id" ColumnName="Catalog_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="Catalog_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="BookEntityRecord" TypeName="LibraryModel.BookEntityRecord" StoreEntitySet="EntityRecords">
+      <EndProperty Name="Book">
+        <ScalarProperty Name="Id" ColumnName="Book_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="Book_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="OrderEntityRecord" TypeName="LibraryModel.OrderEntityRecord" StoreEntitySet="EntityRecords">
+      <EndProperty Name="Order">
+        <ScalarProperty Name="Id" ColumnName="Order_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="Order_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ReaderEntityRecord" TypeName="LibraryModel.ReaderEntityRecord" StoreEntitySet="EntityRecords">
+      <EndProperty Name="Reader">
+        <ScalarProperty Name="Id" ColumnName="Reader_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="Reader_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="BlackListEntityRecord" TypeName="LibraryModel.BlackListEntityRecord" StoreEntitySet="EntityRecords">
+      <EndProperty Name="BlackList">
+        <ScalarProperty Name="Id" ColumnName="BlackList_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="BlackList_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ReaderBlackList" TypeName="LibraryModel.ReaderBlackList" StoreEntitySet="BlackLists">
+      <EndProperty Name="Reader">
+        <ScalarProperty Name="Id" ColumnName="Reader_Id" />
+      </EndProperty>
+      <EndProperty Name="BlackList">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

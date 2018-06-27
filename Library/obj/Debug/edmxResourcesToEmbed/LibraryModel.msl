@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LibraryModelStoreContainer" CdmEntityContainer="LibraryModelContainer">
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.Book)">
+        <MappingFragment StoreEntitySet="Books">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Catalogs">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.Catalog)">
+        <MappingFragment StoreEntitySet="Catalogs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.Order)">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="RegisteredOn" ColumnName="RegisteredOn" />
+          <ScalarProperty Name="DeadlineDate" ColumnName="DeadlineDate" />
+          <ScalarProperty Name="ClosureDate" ColumnName="ClosureDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Readers">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.Reader)">
+        <MappingFragment StoreEntitySet="Readers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Blocked" ColumnName="Blocked" />
+          <ScalarProperty Name="Removed" ColumnName="Removed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.User)">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="TimeInSystem" ColumnName="TimeInSystem" />
+          <ScalarProperty Name="TimeOutSystem" ColumnName="TimeOutSystem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genres">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.Genre)">
+        <MappingFragment StoreEntitySet="Genres">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BlackLists">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.BlackList)">
+        <MappingFragment StoreEntitySet="BlackLists">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Entities">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.Entity)">
+        <MappingFragment StoreEntitySet="Entities">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntityRecords">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.EntityRecord)">
+        <MappingFragment StoreEntitySet="EntityRecords">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="State" ColumnName="State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntityHistories">
+      <EntityTypeMapping TypeName="IsTypeOf(LibraryModel.EntityHistory)">
+        <MappingFragment StoreEntitySet="EntityHistories">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="OldValue" ColumnName="OldValue" />
+          <ScalarProperty Name="NewValue" ColumnName="NewValue" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ReaderOrder" TypeName="LibraryModel.ReaderOrder" StoreEntitySet="Orders">
+      <EndProperty Name="Reader">
+        <ScalarProperty Name="Id" ColumnName="Reader_Id" />
+      </EndProperty>
+      <EndProperty Name="Order">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="CatalogBook" TypeName="LibraryModel.CatalogBook" StoreEntitySet="Books">
+      <EndProperty Name="Catalog">
+        <ScalarProperty Name="Id" ColumnName="Catalog_Id" />
+      </EndProperty>
+      <EndProperty Name="Book">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="Catalog_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="BooksOrders" TypeName="LibraryModel.BooksOrders" StoreEntitySet="BooksOrders">
+      <EndProperty Name="Book">
+        <ScalarProperty Name="Id" ColumnName="Books_Id" />
+      </EndProperty>
+      <EndProperty Name="Order">
+        <ScalarProperty Name="Id" ColumnName="Orders_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="GenreBook" TypeName="LibraryModel.GenreBook" StoreEntitySet="Books">
+      <EndProperty Name="Genre">
+        <ScalarProperty Name="Id" ColumnName="Genre_Id" />
+      </EndProperty>
+      <EndProperty Name="Book">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="EntityEntityRecord" TypeName="LibraryModel.EntityEntityRecord" StoreEntitySet="EntityRecords">
+      <EndProperty Name="Entity">
+        <ScalarProperty Name="Id" ColumnName="Entity_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="EntityRecordEntityHistory" TypeName="LibraryModel.EntityRecordEntityHistory" StoreEntitySet="EntityHistories">
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="EntityRecord_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityHistory">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserEntityHistory" TypeName="LibraryModel.UserEntityHistory" StoreEntitySet="EntityHistories">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="User_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityHistory">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserEntityRecord" TypeName="LibraryModel.UserEntityRecord" StoreEntitySet="EntityRecords">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="CreatedBy_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="CreatedBy_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserEntityRecord1" TypeName="LibraryModel.UserEntityRecord1" StoreEntitySet="EntityRecords">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="ModifiedBy_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="ModifiedBy_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="GenreEntityRecord" TypeName="LibraryModel.GenreEntityRecord" StoreEntitySet="EntityRecords">
+      <EndProperty Name="Genre">
+        <ScalarProperty Name="Id" ColumnName="Genre_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="Genre_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="CatalogEntityRecord" TypeName="LibraryModel.CatalogEntityRecord" StoreEntitySet="EntityRecords">
+      <EndProperty Name="Catalog">
+        <ScalarProperty Name="Id" ColumnName="Catalog_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="Catalog_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="BookEntityRecord" TypeName="LibraryModel.BookEntityRecord" StoreEntitySet="EntityRecords">
+      <EndProperty Name="Book">
+        <ScalarProperty Name="Id" ColumnName="Book_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="Book_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="OrderEntityRecord" TypeName="LibraryModel.OrderEntityRecord" StoreEntitySet="EntityRecords">
+      <EndProperty Name="Order">
+        <ScalarProperty Name="Id" ColumnName="Order_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="Order_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ReaderEntityRecord" TypeName="LibraryModel.ReaderEntityRecord" StoreEntitySet="EntityRecords">
+      <EndProperty Name="Reader">
+        <ScalarProperty Name="Id" ColumnName="Reader_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="Reader_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="BlackListEntityRecord" TypeName="LibraryModel.BlackListEntityRecord" StoreEntitySet="EntityRecords">
+      <EndProperty Name="BlackList">
+        <ScalarProperty Name="Id" ColumnName="BlackList_Id" />
+      </EndProperty>
+      <EndProperty Name="EntityRecord">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="BlackList_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ReaderBlackList" TypeName="LibraryModel.ReaderBlackList" StoreEntitySet="BlackLists">
+      <EndProperty Name="Reader">
+        <ScalarProperty Name="Id" ColumnName="Reader_Id" />
+      </EndProperty>
+      <EndProperty Name="BlackList">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

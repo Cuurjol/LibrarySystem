@@ -1,0 +1,146 @@
+﻿<Window x:Class="Library.OrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="Заказ"
+        Height="640"
+        Width="650"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="ToolWindow"
+        ResizeMode="NoResize" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Window.Resources>
+        <Style TargetType="DataGrid">
+            <Setter Property="CellStyle">
+                <Setter.Value>
+                    <Style TargetType="DataGridCell">
+                        <Setter Property="BorderThickness" Value="0"/>
+                        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="MaxHeight" Value="150"/>
+            <Setter Property="MinHeight" Value="150"/>
+            <Setter Property="Margin" Value="0,5,0,0"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="CanUserReorderColumns" Value="False"/>
+            <Setter Property="CanUserResizeColumns" Value="False"/>
+            <Setter Property="CanUserResizeRows" Value="False"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="CanUserDeleteRows" Value="False"/>
+            <Setter Property="SelectionMode" Value="Single"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Disabled"/>
+            <Style.Resources>
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="DarkBlue"/>
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="Aqua"/>
+                <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="DarkGreen"/>
+                <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightTextBrushKey}" Color="Lime"/>
+            </Style.Resources>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <WrapPanel>
+                <TextBlock HorizontalAlignment="Left" Margin="10,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Поле является обязательным для заполнения">
+                    <Run Text="Читатель"/>
+                    <Run Text="*" Foreground="Red"/>
+                </TextBlock>
+                <TextBlock HorizontalAlignment="Left" Margin="360,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Поле является обязательным для заполнения">
+                    <Run Text="Дата закрытия"/>
+                    <Run Text="*" Foreground="Red"/>
+                </TextBlock>
+            </WrapPanel>
+            <WrapPanel>
+                <ComboBox Name="ReaderNameComboBox" HorizontalAlignment="Left" Height="23" Margin="10,5,0,0" VerticalAlignment="Top" Width="270" DisplayMemberPath="Name" SelectedValuePath="Id" IsEditable="True" IsTextSearchEnabled="False" TextBoxBase.TextChanged="ReaderNameComboBoxTextChanged"/>
+                <xctk:DateTimePicker Name="DeadlineDateOrder" VerticalAlignment="Center" Width="200" Margin="150,5,0,0" CalendarDisplayMode="Decade" Format="RFC1123"/>
+            </WrapPanel>
+        </StackPanel>
+        <GroupBox Grid.Row="1" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="620">
+            <GroupBox.Header>
+                <TextBlock Text="Фильтрация книг" FontWeight="Bold"/>
+            </GroupBox.Header>
+            <Grid>
+                <RadioButton Name="NameFilterRadioButton" Margin="0,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Название" IsChecked="True" Checked="FiltersRadioButtonChecked"/>
+                <TextBox Name="NameTextBox" Margin="80,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="200" TextWrapping="Wrap" TextChanged="NameFilterTextChanged"/>
+                <RadioButton Name="AuthorFilterRadioButton" Margin="0,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Автор" Checked="FiltersRadioButtonChecked"/>
+                <TextBox Name="AuthorTextBox" Margin="80,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="Auto" Width="200" TextWrapping="Wrap" IsEnabled="False" TextChanged="AuthorFilterTextChanged"/>
+                <RadioButton Name="CatalogFilterRadioButton" Content="Каталог" Margin="310,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Checked="FiltersRadioButtonChecked"/>
+                <TextBox Name="CatalogTextBox" Margin="380,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="200" TextWrapping="Wrap" IsEnabled="False" TextChanged="CatalogFilterTextChanged"/>
+                <RadioButton Name="GenreFilterRadioButton" Content="Жанр" Margin="310,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Checked="FiltersRadioButtonChecked"/>
+                <TextBox Name="GenreTextBox" Margin="380,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="200" TextWrapping="Wrap" IsEnabled="False" TextChanged="GenreFilterTextChanged"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Grid.Row="2" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="620">
+            <GroupBox.Header>
+                <TextBlock Text="Таблица книг" FontWeight="Bold"/>
+            </GroupBox.Header>
+            <StackPanel>
+                <DataGrid Name="BookDataGrid">
+                    <DataGrid.Resources>
+                        <Style TargetType="TextBlock" x:Key="WrapText">
+                            <Setter Property="TextWrapping" Value="Wrap"/>
+                        </Style>
+                    </DataGrid.Resources>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Name}" Header="Название" Width="150" ElementStyle="{StaticResource WrapText}"/>
+                        <DataGridTextColumn Binding="{Binding Genre.Name}" Header="Жанр" Width="120" ElementStyle="{StaticResource WrapText}"/>
+                        <DataGridTextColumn Binding="{Binding Author}" Header="Автор" Width="120" ElementStyle="{StaticResource WrapText}"/>
+                        <DataGridTextColumn Binding="{Binding Year}" Header="Год издания" Width="90"/>
+                        <DataGridTextColumn Binding="{Binding Catalog.Name}" Header="Каталог" Width="120" ElementStyle="{StaticResource WrapText}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Grid Margin="0,10,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Button Content="Добавить книгу в корзину" HorizontalAlignment="Stretch" VerticalAlignment="Center" Click="AddBookToTheBasket_Click"/>
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Grid.Row="3" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="620">
+            <GroupBox.Header>
+                <TextBlock FontWeight="Bold" ToolTip="Таблица является обязательным для заполнения. Выберите нужную книгу и нажмите на кнопку &quot;Добавить книгу в корзину&quot;">
+                    <Run Text="Корзина выбранных книг"/>
+                    <Run Text="*" Foreground="Red"/>
+                </TextBlock>
+            </GroupBox.Header>
+            <StackPanel>
+                <DataGrid Name="BasketBookDataGrid" SelectionMode="Extended">
+                    <DataGrid.Resources>
+                        <Style TargetType="TextBlock" x:Key="WrapText">
+                            <Setter Property="TextWrapping" Value="Wrap"/>
+                        </Style>
+                    </DataGrid.Resources>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Name}" Header="Название" Width="150" ElementStyle="{StaticResource WrapText}"/>
+                        <DataGridTextColumn Binding="{Binding Genre.Name}" Header="Жанр" Width="120" ElementStyle="{StaticResource WrapText}"/>
+                        <DataGridTextColumn Binding="{Binding Author}" Header="Автор" Width="120" ElementStyle="{StaticResource WrapText}"/>
+                        <DataGridTextColumn Binding="{Binding Year}" Header="Год издания" Width="90"/>
+                        <DataGridTextColumn Binding="{Binding Catalog.Name}" Header="Каталог" Width="120" ElementStyle="{StaticResource WrapText}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Grid Margin="0,10,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Button Content="Удалить выбранные книги из корзины" HorizontalAlignment="Stretch" VerticalAlignment="Center" Click="DeleteBooksFromBasket_Click"/>
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <Grid Grid.Row="4" Margin="10" Width="610">
+            <Button Name="AddUpdateButton" Content="Оформить" Width="90" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="PackageOrder_Click"/>
+            <Button Content="Отмена" Width="90" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="Close_Click"/>
+        </Grid>
+    </Grid>
+</Window>

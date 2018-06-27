@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8218a058b8b94936924ecce246f8459f" Name="Diagram1" ZoomLevel="101" >
+        <EntityTypeShape EntityType="LibraryModel.Book" Width="1.5" PointX="3" PointY="8.375" />
+        <EntityTypeShape EntityType="LibraryModel.Catalog" Width="1.5" PointX="0.75" PointY="8.5" />
+        <EntityTypeShape EntityType="LibraryModel.Order" Width="1.5" PointX="5.25" PointY="8.375" />
+        <EntityTypeShape EntityType="LibraryModel.Reader" Width="1.5" PointX="7.875" PointY="8.375" />
+        <EntityTypeShape EntityType="LibraryModel.User" Width="1.5" PointX="8.25" PointY="0.875" />
+        <AssociationConnector Association="LibraryModel.ReaderOrder" />
+        <AssociationConnector Association="LibraryModel.CatalogBook" />
+        <AssociationConnector Association="LibraryModel.BooksOrders" />
+        <EntityTypeShape EntityType="LibraryModel.Genre" Width="1.5" PointX="3.5" PointY="4.5" />
+        <AssociationConnector Association="LibraryModel.GenreBook" />
+        <EntityTypeShape EntityType="LibraryModel.BlackList" Width="1.5" PointX="10.375" PointY="8.375" />
+        <EntityTypeShape EntityType="LibraryModel.Entity" Width="1.5" PointX="5.625" PointY="1" />
+        <EntityTypeShape EntityType="LibraryModel.EntityRecord" Width="1.5" PointX="8.25" PointY="4.125" />
+        <EntityTypeShape EntityType="LibraryModel.EntityHistory" Width="1.5" PointX="10.75" PointY="0.875" />
+        <AssociationConnector Association="LibraryModel.EntityEntityRecord" />
+        <AssociationConnector Association="LibraryModel.EntityRecordEntityHistory" />
+        <AssociationConnector Association="LibraryModel.UserEntityHistory" />
+        <AssociationConnector Association="LibraryModel.UserEntityRecord" />
+        <AssociationConnector Association="LibraryModel.UserEntityRecord1" />
+        <AssociationConnector Association="LibraryModel.GenreEntityRecord" />
+        <AssociationConnector Association="LibraryModel.CatalogEntityRecord" />
+        <AssociationConnector Association="LibraryModel.BookEntityRecord" />
+        <AssociationConnector Association="LibraryModel.OrderEntityRecord" />
+        <AssociationConnector Association="LibraryModel.ReaderEntityRecord" />
+        <AssociationConnector Association="LibraryModel.BlackListEntityRecord" />
+        <AssociationConnector Association="LibraryModel.ReaderBlackList" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

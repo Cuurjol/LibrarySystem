@@ -1,0 +1,43 @@
+﻿<Window x:Class="Library.UserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Пользователь системы" 
+        Height="350" 
+        Width="300"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="ToolWindow"
+        ResizeMode="NoResize"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Поле является обязательным для заполнения">
+            <Run Text="ФИО"/>
+            <Run Text="*" Foreground="Red"/>
+        </TextBlock>
+        <TextBox Name="UserNameTextBox" HorizontalAlignment="Center" Height="23" Margin="0,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="265"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Поле является обязательным для заполнения">
+            <Run Text="Роль пользователя"/>
+            <Run Text="*" Foreground="Red"/>
+        </TextBlock>
+        <ComboBox Name="UserUserRoleComboBox" HorizontalAlignment="Center" Margin="0,90,0,0" VerticalAlignment="Top" Width="265">
+            <ComboBox.Items>
+                <ComboBoxItem Content="Библиотекарь"/>
+                <ComboBoxItem Content="Администратор"/>
+            </ComboBox.Items>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="10,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Поле является обязательным для заполнения">
+            <Run Text="Login"/>
+            <Run Text="*" Foreground="Red"/>
+        </TextBlock>
+        <TextBox Name="UserLoginTextBox" HorizontalAlignment="Center" Height="23" Margin="0,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="265"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Поле является обязательным для заполнения">
+            <Run Text="Password"/>
+            <Run Text="*" Foreground="Red"/>
+        </TextBlock>
+        <TextBox Name="UserPasswordTextBox" HorizontalAlignment="Center" Height="23" Margin="0,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="265"/>
+        <Button Name="AddUpdateButton" Content="Добавить" Width="90" Margin="10, 0, 0, 10" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="AddUpdateRecord_Click"/>
+        <Button Content="Отмена" Width="90" Margin="0, 0, 10, 10" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="Close_Click"/>
+    </Grid>
+</Window>

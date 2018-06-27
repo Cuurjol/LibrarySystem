@@ -1,0 +1,455 @@
+C:\Users\Cuurjol\source\repos\Library\Library\bin\Debug\Library.exe.config
+C:\Users\Cuurjol\source\repos\Library\Library\bin\Debug\Library.exe
+C:\Users\Cuurjol\source\repos\Library\Library\bin\Debug\Library.pdb
+C:\Users\Cuurjol\source\repos\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+C:\Users\Cuurjol\source\repos\Library\Library\obj\Debug\AuthorizationWindow.baml
+C:\Users\Cuurjol\source\repos\Library\Library\obj\Debug\MainWindow.baml
+C:\Users\Cuurjol\source\repos\Library\Library\obj\Debug\AuthorizationWindow.g.cs
+C:\Users\Cuurjol\source\repos\Library\Library\obj\Debug\MainWindow.g.cs
+C:\Users\Cuurjol\source\repos\Library\Library\obj\Debug\App.g.cs
+C:\Users\Cuurjol\source\repos\Library\Library\obj\Debug\Library_MarkupCompile.cache
+C:\Users\Cuurjol\source\repos\Library\Library\obj\Debug\Library.g.resources
+C:\Users\Cuurjol\source\repos\Library\Library\obj\Debug\Library.Properties.Resources.resources
+C:\Users\Cuurjol\source\repos\Library\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+C:\Users\Cuurjol\source\repos\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\Cuurjol\source\repos\Library\Library\obj\Debug\Library.exe
+C:\Users\Cuurjol\source\repos\Library\Library\obj\Debug\Library.pdb
+C:\Users\Cuurjol\source\repos\Library\Library\bin\Debug\EntityFramework.dll
+C:\Users\Cuurjol\source\repos\Library\Library\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Cuurjol\source\repos\Library\Library\bin\Debug\EntityFramework.xml
+C:\Users\Cuurjol\source\repos\Library\Library\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\bin\Debug\Library.exe.config
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\bin\Debug\Library.exe
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\bin\Debug\Library.pdb
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\bin\Debug\EntityFramework.dll
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\bin\Debug\EntityFramework.xml
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\obj\Debug\AuthorizationWindow.baml
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\obj\Debug\MainWindow.baml
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\obj\Debug\AuthorizationWindow.g.cs
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\obj\Debug\MainWindow.g.cs
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\obj\Debug\App.g.cs
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\obj\Debug\Library_MarkupCompile.cache
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\obj\Debug\Library.g.resources
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\obj\Debug\Library.Properties.Resources.resources
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\obj\Debug\Library.exe
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\obj\Debug\Library.pdb
+C:\Users\Cuurjol\Desktop\123\BACKUP LIBRARY\Library\Library\obj\Debug\Library_Content.g.cs
+D:\C# Education\123\Library\Library\bin\Debug\Library.exe.config
+D:\C# Education\123\Library\Library\bin\Debug\Library.exe
+D:\C# Education\123\Library\Library\bin\Debug\Library.pdb
+D:\C# Education\123\Library\Library\bin\Debug\EntityFramework.dll
+D:\C# Education\123\Library\Library\bin\Debug\EntityFramework.SqlServer.dll
+D:\C# Education\123\Library\Library\bin\Debug\EntityFramework.xml
+D:\C# Education\123\Library\Library\bin\Debug\EntityFramework.SqlServer.xml
+D:\C# Education\123\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+D:\C# Education\123\Library\Library\obj\Debug\AuthorizationWindow.baml
+D:\C# Education\123\Library\Library\obj\Debug\MainWindow.baml
+D:\C# Education\123\Library\Library\obj\Debug\AuthorizationWindow.g.cs
+D:\C# Education\123\Library\Library\obj\Debug\MainWindow.g.cs
+D:\C# Education\123\Library\Library\obj\Debug\App.g.cs
+D:\C# Education\123\Library\Library\obj\Debug\Library_Content.g.cs
+D:\C# Education\123\Library\Library\obj\Debug\Library_MarkupCompile.cache
+D:\C# Education\123\Library\Library\obj\Debug\Library.g.resources
+D:\C# Education\123\Library\Library\obj\Debug\Library.Properties.Resources.resources
+D:\C# Education\123\Library\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+D:\C# Education\123\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+D:\C# Education\123\Library\Library\obj\Debug\Library.exe
+D:\C# Education\123\Library\Library\obj\Debug\Library.pdb
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\bin\Debug\Library.exe.config
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\bin\Debug\Library.exe
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\bin\Debug\Library.pdb
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\bin\Debug\EntityFramework.dll
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\bin\Debug\EntityFramework.xml
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\obj\Debug\AuthorizationWindow.baml
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\obj\Debug\MainWindow.baml
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\obj\Debug\AuthorizationWindow.g.cs
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\obj\Debug\MainWindow.g.cs
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\obj\Debug\App.g.cs
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\obj\Debug\Library_Content.g.cs
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\obj\Debug\Library_MarkupCompile.cache
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\obj\Debug\Library.g.resources
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\obj\Debug\Library.Properties.Resources.resources
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\obj\Debug\Library.exe
+C:\Users\TopCRM\Desktop\Examples of projects\123\Library\Library\obj\Debug\Library.pdb
+E:\C# Education\123\Library\Library\bin\Debug\Library.exe.config
+E:\C# Education\123\Library\Library\bin\Debug\Library.exe
+E:\C# Education\123\Library\Library\bin\Debug\Library.pdb
+E:\C# Education\123\Library\Library\bin\Debug\EntityFramework.dll
+E:\C# Education\123\Library\Library\bin\Debug\EntityFramework.SqlServer.dll
+E:\C# Education\123\Library\Library\bin\Debug\EntityFramework.xml
+E:\C# Education\123\Library\Library\bin\Debug\EntityFramework.SqlServer.xml
+E:\C# Education\123\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+E:\C# Education\123\Library\Library\obj\Debug\AuthorizationWindow.baml
+E:\C# Education\123\Library\Library\obj\Debug\MainWindow.baml
+E:\C# Education\123\Library\Library\obj\Debug\AuthorizationWindow.g.cs
+E:\C# Education\123\Library\Library\obj\Debug\MainWindow.g.cs
+E:\C# Education\123\Library\Library\obj\Debug\ReaderWindow.g.cs
+E:\C# Education\123\Library\Library\obj\Debug\App.g.cs
+E:\C# Education\123\Library\Library\obj\Debug\Library_Content.g.cs
+E:\C# Education\123\Library\Library\obj\Debug\Library_MarkupCompile.cache
+E:\C# Education\123\Library\Library\obj\Debug\Library_MarkupCompile.lref
+E:\C# Education\123\Library\Library\obj\Debug\ReaderWindow.baml
+E:\C# Education\123\Library\Library\obj\Debug\Library.g.resources
+E:\C# Education\123\Library\Library\obj\Debug\Library.Properties.Resources.resources
+E:\C# Education\123\Library\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+E:\C# Education\123\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+E:\C# Education\123\Library\Library\obj\Debug\Library.exe
+E:\C# Education\123\Library\Library\obj\Debug\Library.pdb
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\Library.exe.config
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\Library.exe
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\Library.pdb
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\EntityFramework.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\EntityFramework.xml
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\AuthorizationWindow.baml
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\MainWindow.baml
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\AuthorizationWindow.g.cs
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\MainWindow.g.cs
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\App.g.cs
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\Library_Content.g.cs
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\Library_MarkupCompile.cache
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\Library_MarkupCompile.lref
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\Library.g.resources
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\Library.Properties.Resources.resources
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\Library.exe
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\Library.pdb
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\Library.exe.config
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\Library.exe
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\Library.pdb
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\EntityFramework.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\EntityFramework.xml
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\AuthorizationWindow.baml
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\MainWindow.baml
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\AuthorizationWindow.g.cs
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\MainWindow.g.cs
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\App.g.cs
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\Library_Content.g.cs
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\Library_MarkupCompile.cache
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\Library_MarkupCompile.lref
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\Library.g.resources
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\Library.Properties.Resources.resources
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\Library.exe
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\Library.pdb
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\ReaderWindow.g.cs
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\ReaderWindow.baml
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\ReaderWindow.g.cs
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\ReaderWindow.baml
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\BookWindow.g.cs
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\CatalogWindow.g.cs
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\OrderWindow.g.cs
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\BookWindow.baml
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\CatalogWindow.baml
+C:\Users\Cuurjol\Desktop\123\Library\Library\obj\Debug\OrderWindow.baml
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\123\Library\Library\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\BookWindow.g.cs
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\CatalogWindow.g.cs
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\OrderWindow.g.cs
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\BookWindow.baml
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\CatalogWindow.baml
+C:\Users\TopCRM\Desktop\123\Library\Library\obj\Debug\OrderWindow.baml
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\Library.exe.config
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\Library.exe
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\Library.pdb
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\EntityFramework.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\EntityFramework.xml
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\AuthorizationWindow.baml
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\MainWindow.baml
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\AuthorizationWindow.g.cs
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\BookWindow.g.cs
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\CatalogWindow.g.cs
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\MainWindow.g.cs
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\OrderWindow.g.cs
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\ReaderWindow.g.cs
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\App.g.cs
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\Library_Content.g.cs
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\Library_MarkupCompile.cache
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\Library_MarkupCompile.lref
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\BookWindow.baml
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\CatalogWindow.baml
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\OrderWindow.baml
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\ReaderWindow.baml
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\Library.g.resources
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\Library.Properties.Resources.resources
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\Library.exe
+C:\Users\Cuurjol\Desktop\1\Library\Library\obj\Debug\Library.pdb
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Library.exe.config
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Library.exe
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Library.pdb
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\EntityFramework.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\EntityFramework.xml
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\AuthorizationWindow.baml
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\MainWindow.baml
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\AuthorizationWindow.g.cs
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\BookWindow.g.cs
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\CatalogWindow.g.cs
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\MainWindow.g.cs
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\OrderWindow.g.cs
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\ReaderWindow.g.cs
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\App.g.cs
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library_Content.g.cs
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library_MarkupCompile.cache
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library_MarkupCompile.lref
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\BookWindow.baml
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\CatalogWindow.baml
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\OrderWindow.baml
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\ReaderWindow.baml
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library.g.resources
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library.Properties.Resources.resources
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library.exe
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library.pdb
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Library.exe.config
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Library.exe
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Library.pdb
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\EntityFramework.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\EntityFramework.xml
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\AuthorizationWindow.baml
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\MainWindow.baml
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\OrderWindow.baml
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\AuthorizationWindow.g.cs
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\BookWindow.g.cs
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\CatalogWindow.g.cs
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\MainWindow.g.cs
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\OrderWindow.g.cs
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\ReaderWindow.g.cs
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\App.g.cs
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library_Content.g.cs
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library_MarkupCompile.cache
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library_MarkupCompile.lref
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\BookWindow.baml
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\CatalogWindow.baml
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\ReaderWindow.baml
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library.g.resources
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library.Properties.Resources.resources
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library.exe
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library.pdb
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\UserWindow.baml
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\UserWindow.g.cs
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\UserWindow.baml
+C:\Users\TopCRM\Desktop\WPF Library\Current project\Library\Library\obj\Debug\UserWindow.g.cs
+C:\Users\Cuurjol\Desktop\WPF Library\Current project\Library\Library\obj\Debug\Library.csproj.CopyComplete
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Library.exe.config
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Library.exe
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Library.pdb
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\EntityFramework.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\EntityFramework.xml
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\AuthorizationWindow.baml
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\CatalogWindow.baml
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\MainWindow.baml
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\OrderWindow.baml
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\ReaderWindow.baml
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\UserWindow.baml
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\AuthorizationWindow.g.cs
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\BookWindow.g.cs
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\CatalogWindow.g.cs
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\MainWindow.g.cs
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\OrderWindow.g.cs
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\ReaderWindow.g.cs
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\UserWindow.g.cs
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\App.g.cs
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library_Content.g.cs
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library_MarkupCompile.cache
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\BookWindow.baml
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library.g.resources
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library.Properties.Resources.resources
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library.exe
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library.pdb
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Library.exe.config
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Library.exe
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Library.pdb
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\EntityFramework.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\EntityFramework.xml
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\AuthorizationWindow.baml
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\CatalogWindow.baml
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\MainWindow.baml
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\OrderWindow.baml
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\ReaderWindow.baml
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\UserWindow.baml
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\AuthorizationWindow.g.cs
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\BookWindow.g.cs
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\CatalogWindow.g.cs
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\MainWindow.g.cs
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\OrderWindow.g.cs
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\ReaderWindow.g.cs
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\UserWindow.g.cs
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\App.g.cs
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library_Content.g.cs
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library_MarkupCompile.cache
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\BookWindow.baml
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library.g.resources
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library.Properties.Resources.resources
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library.csproj.GenerateResource.cache
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library.csproj.CopyComplete
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library.exe
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\Library.pdb
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\OrderDetailWindow.baml
+C:\Users\TopCRM\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\OrderDetailWindow.g.cs
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\OrderDetailWindow.baml
+C:\Users\Cuurjol\Desktop\0987654\WPF Library\Current project\Library\Library\obj\Debug\OrderDetailWindow.g.cs

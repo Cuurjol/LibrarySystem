@@ -1,0 +1,28 @@
+﻿<Window x:Class="Library.CatalogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Каталог" 
+        Height="350" 
+        Width="300" 
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="ToolWindow" 
+        ResizeMode="NoResize"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Поле является обязательным для заполнения">
+            <Run Text="Название"/>
+            <Run Text="*" Foreground="Red"/>
+        </TextBlock>
+        <TextBox Name="NameCatalogTextBox" HorizontalAlignment="Center" Height="23" Margin="0,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="265"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Поле является обязательным для заполнения">
+            <Run Text="Описание"/>
+            <Run Text="*" Foreground="Red"/>
+        </TextBlock>
+        <TextBox Name="DescriptionCatalogTextBox" HorizontalAlignment="Center" Height="60" Margin="0,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="265"/>
+        <Button Name="AddUpdateButton" Content="Добавить" Width="90" Margin="10, 0, 0, 10" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="AddUpdateRecord_Click"/>
+        <Button Content="Отмена" Width="90" Margin="0, 0, 10, 10" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="Close_Click"/>
+    </Grid>
+</Window>
